@@ -16,4 +16,13 @@ int main() {
 	Line AK = {B.x-C.x, -C.y+B.y, (-B.x+C.x)*A.x + (C.y-B.y)*A.y};
 	printf("Line BC is %fx + %fy + %f\n", BC.A, BC.B, BC.C);
 	printf("Line AK is %fx + %fy + %f\n", AK.A, AK.B, AK.C);
+	double determinant = BC.A*AK.B - BC.B*BC.C;
+	    if (determinant != 0) {
+       		 double x = (e*d - b*f)/determinant;
+       		 double y = (a*f - e*c)/determinant;
+       		 printf("Cramer equations system: result, x = %f, y = %f\n", x, y);
+   		 } else {
+        printf("Cramer equations system: determinant is zero\n"
+                "there are either no solutions or many solutions exist.\n"); 
+    }	
 }
