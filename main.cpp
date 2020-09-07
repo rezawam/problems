@@ -1,37 +1,37 @@
-#include <iostream>
-#include <map>
-#include <string>
+#include <stdio.h>
+#include <math.h>
 
-
-int main() 
+int main()
 {
-	std::string input = "";
-	char res = 0;
-	int rate = 0;
-	std::map<int,std::string> hired, unknown;
-
-	while (1) 
+	int n = 0, point = 0, s = 0, ns = 0;
+	bool res = 1; // 1 if simple
+	scanf("%d", &n);
+	for (int i = 0; i < n; ++i)
 	{
-		std::cin >> input;
-		if (input == "KUSHAT_NECHEGO")
-			break;
-		else if (input == "SOBES") 
+		res = 1;
+		scanf("%d", &point);			
+		for (int i = 2; i <= sqrt(point); ++i)
+		{	
+			if (point % i == 0) 
+			{
+				res = 0;
+				break;
+			}
+						
+		}
+		switch (res)
 		{
-			std::cin >> res;
-			if (res == '+') 
-				hired.insert(std::pair<int,std::string>(unknown.rbegin()->first, unknown.rbegin()->second));
-			unknown.erase(unknown.rbegin()->first);
-		} 
-		else 
-		{
-			std::cin >> rate;
-			unknown.insert(std::pair<int,std::string>(rate, input));
+			case 0:
+				ns++;
+				break;
+			case 1:
+				s++;
+				break;
 		}
 	}
-
-	if (!hired.empty())
-		std::cout << hired.rbegin()->second << std::endl;
+	if (s > ns)
+		printf("EASY_EASY_REAL_TALK\n");
 	else
-		std::cout << "GOLODAEM_DALSHE" << std::endl;
+		printf("OTCHISLEN\n");
 	return 0;
 }
