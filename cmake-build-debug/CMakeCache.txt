@@ -173,7 +173,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=jej
+CMAKE_PROJECT_NAME:STATIC=problems
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -245,6 +245,12 @@ jej_BINARY_DIR:STATIC=/Users/2004np/Programs/problems/cmake-build-debug
 
 //Value Computed by CMake
 jej_SOURCE_DIR:STATIC=/Users/2004np/Programs/problems
+
+//Value Computed by CMake
+problems_BINARY_DIR:STATIC=/Users/2004np/Programs/problems/cmake-build-debug
+
+//Value Computed by CMake
+problems_SOURCE_DIR:STATIC=/Users/2004np/Programs/problems
 
 
 ########################

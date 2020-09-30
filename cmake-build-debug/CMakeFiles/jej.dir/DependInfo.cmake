@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/2004np/Programs/problems/Node.cpp" "/Users/2004np/Programs/problems/cmake-build-debug/CMakeFiles/jej.dir/Node.cpp.o"
   "/Users/2004np/Programs/problems/main.cpp" "/Users/2004np/Programs/problems/cmake-build-debug/CMakeFiles/jej.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
