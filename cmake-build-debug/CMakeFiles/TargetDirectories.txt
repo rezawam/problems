@@ -1,0 +1,3 @@
+/Users/2004np/Programs/problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/2004np/Programs/problems/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/2004np/Programs/problems/cmake-build-debug/CMakeFiles/jej.dir
